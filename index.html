@@ -23,17 +23,25 @@
         }
 
         header {
+
             background-color: rgb(16, 16, 90);
             width: 100vw;
-            height: 13vh;
-            color: white;
+            justify-content: center;
             display: flex;
-            justify-content: space-between;
             align-items: center;
         }
 
         header .nav1 {
+            color: white;
             font-size: 25px;
+        }
+
+        header .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0;
+            padding-top: 0
         }
 
         header ul li a {
@@ -76,7 +84,8 @@
             justify-content: space-evenly;
             align-items: center;
         }
-        footer .footer2{
+
+        footer .footer2 {
             margin: 0;
             padding: 0;
         }
@@ -117,7 +126,11 @@
         }
 
         @media screen and (max-width: 800px) {
-            footer .footer{
+            header .nav {
+                font-size: 12px;
+            }
+
+            footer .footer {
                 width: 400px;
             }
 
@@ -133,7 +146,8 @@
                 font-size: 15px !important;
                 padding: 12px;
             }
-            .phone{
+
+            .phone {
                 color: goldenrod;
             }
         }
@@ -144,7 +158,9 @@
 
     <header>
         <div class="nav1">Zubair's Portfolio</div>
-        <ul class="nav justify-content-end">
+    </header>
+    <header>
+        <ul class="nav">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="mycv.html">Resume</a>
             </li>
@@ -170,7 +186,7 @@
                 <div> <span id="element"></span></div>
                 <div class="button">
                     <a href="zubair.pdf" download>
-                    <button class="button">Download Resume</button></a>
+                        <button class="button">Download Resume</button></a>
                 </div>
             </div>
         </div>
@@ -183,9 +199,11 @@
             <h2 id="socials">Socials</h2>
             <ul class="gold">
 
-                <li class="dec"><a class="link" href="https://instagram.com/mohammed_zubair_shaikh_18?igshid=NGVhN2U2NjQ0Yg==">
+                <li class="dec"><a class="link"
+                        href="https://instagram.com/mohammed_zubair_shaikh_18?igshid=NGVhN2U2NjQ0Yg==">
                         <img class="footerimg" src="insta.png.png">Instagram</a></li>
-                <li class="dec"><a class="link" href="https://www.facebook.com/profile.php?id=100026964499722&mibextid=ZbWKwL">
+                <li class="dec"><a class="link"
+                        href="https://www.facebook.com/profile.php?id=100026964499722&mibextid=ZbWKwL">
                         <img class="footerimg" src="fb.png" alt="">Fcaebook</a></li>
             </ul>
         </div>
@@ -196,8 +214,8 @@
                 <li class="dec">Email : zubairshaikhzubbu@gamil.com</li>
             </ul>
         </div>
-</footer>
-<footer class="footer2">
+    </footer>
+    <footer class="footer2">
         <div class="footer-rights">
             Copyright &copy; www.zubairsportfolio.com | All rights reserved
         </div>
