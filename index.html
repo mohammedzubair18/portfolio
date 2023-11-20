@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-        <link rel="icon" href="h.png">
+    <link rel="icon" href="h.png">
     <script src="script.js" defer></script>
     <style>
         * {
@@ -63,6 +63,7 @@
             position: fixed;
             top: 0;
             width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
 
         .toggle-button {
@@ -89,8 +90,10 @@
 
         }
 
-        header ul li a:hover {
-            color: black !important;
+        a:hover {
+            font-size: 1.5rem;
+            background-color: rgb(93, 93, 240);
+            border-radius: 50px;
         }
 
         section {
@@ -119,6 +122,7 @@
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
 
         footer .footer2 {
@@ -130,9 +134,10 @@
             list-style: none;
             color: rgb(252, 251, 249);
         }
-        a:hover{
-            color: black;
-        }
+
+        /* a:hover{
+            background-color: rgb(80, 0, 0);
+        } */
 
         .link {
             color: rgb(252, 251, 249);
@@ -154,6 +159,7 @@
             color: gold;
             font-size: 23px;
             padding-left: 22px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
 
         .footerimg {
@@ -264,8 +270,7 @@
         </div>
     </section>
 
-
-
+<span class="shadow">
     <footer class=".footer">
         <div class="footerleft">
             <h2 id="socials">Socials</h2>
@@ -297,7 +302,7 @@
             Copyright &copy; www.zubairsportfolio.com | All rights reserved
         </div>
     </footer>
-
+</span>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
